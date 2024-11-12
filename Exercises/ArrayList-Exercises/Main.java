@@ -11,15 +11,13 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Scanner;
-import java.util.Itelator;
-
+import java.util.Iterator;
 
 
 public class Main {
 
 
-    public static void countFrequencies(ArrayList<String> Occurrences)
-    {
+    public static void countFrequencies(ArrayList<String> Occurrences) {
         // hashmap to store the frequency of element
         Map<String, Integer> hm = new HashMap<String, Integer>();
 
@@ -36,8 +34,7 @@ public class Main {
         }
     }
 
-    public static <T> ArrayList<T> removeDuplicates(ArrayList<T> list)
-    {
+    public static <T> ArrayList<T> removeDuplicates(ArrayList<T> list) {
 
         // Create a new ArrayList
         ArrayList<T> newList = new ArrayList<T>();
@@ -55,10 +52,10 @@ public class Main {
         return newList;
     }
 
-    public static int sumNumbers(ArrayList<Integer> numbersList){
+    public static int sumNumbers(ArrayList<Integer> numbersList) {
         int sum = 0;
-        for(int i = 0; i<numbersList.size(); i++){
-            sum+=numbersList.get(i);
+        for (int i = 0; i < numbersList.size(); i++) {
+            sum += numbersList.get(i);
         }
         return sum;
     }
@@ -175,13 +172,13 @@ public class Main {
         carsList.add("BMW");
 
         // printing the unsorted ArrayList
-        System.out.println("Before Sorting: "+ carsList);
+        System.out.println("Before Sorting: " + carsList);
 
         // Sorting ArrayList in ascending Order
         Collections.sort(carsList);
 
         // printing the sorted ArrayList
-        System.out.println("After Sorting: "+ carsList);
+        System.out.println("After Sorting: " + carsList);
 
 //                                      ---Exercise 8---
 
@@ -251,16 +248,30 @@ public class Main {
 //                                      ---Exercise 13---
 
         // Calculate the average of elements
-        double average = (double)sum / list.size();
+        double average = (double) sum / list.size();
         System.out.println("Average: " + average);
 
 //                                      ---Exercise 14---
 
-
-
-
+        ArrayList<String> words = new ArrayList<String>();
+        //Instantiating an ArrayList object
+        words.add("JavaFX");
+        words.add("Java");
+        words.add("WebGL");
+        words.add("OpenCV");
+        words.add("OpenNLP");
+        words.add("JOGL");
+        words.add("Hadoop");
+        words.add("HBase");
+        words.add("Java Script");
+        words.add("Flume");
+        words.add("Mahout");
+        words.add("Impala");
+        System.out.println("Contents of the array list: ");
+        for (String element : words) {
+            if (element.contains("Java")) {
+                System.out.println(element);
+            }
+        }
     }
-
-
-
 }
