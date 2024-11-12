@@ -11,6 +11,8 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Scanner;
+import java.util.Itelator;
+
 
 
 public class Main {
@@ -251,6 +253,9 @@ public class Main {
         // Calculate the average of elements
         double average = (double)sum / list.size();
         System.out.println("Average: " + average);
+
+//                                      ---Exercise 14---
+
 
 
 
