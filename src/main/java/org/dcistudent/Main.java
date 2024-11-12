@@ -47,10 +47,10 @@ public class Main {
     }
 
     /**
-     * Create a random array of integers.
+     * Create an ArrayList of Integers with random values
      *
-     * @param size the size of the array
-     * @return int[]
+     * @param size Size of the list
+     * @return List of random integers
      */
     public List<Integer> createRandomArrayList(int size) {
         List<Integer> list = new ArrayList<>();
