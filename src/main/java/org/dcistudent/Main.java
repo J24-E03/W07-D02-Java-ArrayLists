@@ -186,8 +186,9 @@ public class Main {
      * Exercise 6: Removing Duplicates
      *
      * 1. Create an ArrayList of Integers with values 1 to 10
-     * 2. Create an ArrayList of Integers with odd numbers
-     * 3. Remove duplicates from the list
+     * 2. Create an ArrayList of Integers with odd values
+     * 3. Create an ArrayList of Integers to store unique values
+     * 4. Remove odd numbers from the list of unique values
      */
     public Main exercise6() {
         List<Integer> list = new ArrayList<>(Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10));
