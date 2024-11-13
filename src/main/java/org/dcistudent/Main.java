@@ -192,14 +192,15 @@ public class Main {
     public Main exercise6() {
         List<Integer> list = new ArrayList<>(Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10));
         List<Integer> listOdd = new ArrayList<>(Arrays.asList(1, 3, 5, 7, 9));
+        List<Integer> listUnique = new ArrayList<>(list);
 
         System.out.println("Exercise 6:");
         System.out.println("List: " + Arrays.toString(list.toArray()));
         System.out.println("List odd: " + Arrays.toString(listOdd.toArray()));
 
-        list.removeIf(listOdd::contains);
+        listUnique.removeAll(listOdd);
 
-        System.out.printf("Non-duplicates list: %s%n", Arrays.toString(list.toArray()));
+        System.out.printf("Non-duplicates list: %s%n", Arrays.toString(listUnique.toArray()));
 
         return this;
     }
