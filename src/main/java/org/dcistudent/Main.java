@@ -300,16 +300,10 @@ public class Main {
      * Exercise 12: Summing with a Method
      *
      * 1. Create an ArrayList of Integers with random values
-     * 2. Sum all elements in the list
+     * 2. Sum the elements in the list using a method
      */
     public int exercise12(List<Integer> list) {
-        int sum = 0;
-
-        for (int i : list) {
-            sum += i;
-        }
-
-        return sum;
+        return list.stream().mapToInt(Integer::intValue).sum();
     }
 
     /**
