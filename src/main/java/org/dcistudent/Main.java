@@ -229,7 +229,6 @@ public class Main {
      */
     public Main exercise8() {
         List<Integer> list = this.createRandomArrayList(10);
-        int max = list.get(0);
 
         System.out.println("Exercise 8:");
         System.out.println("List: " + Arrays.toString(list.toArray()));
@@ -288,7 +287,6 @@ public class Main {
      */
     public Main exercise11() {
         List<String> list = new ArrayList<>(Arrays.asList("apple", "banana", "apple", "orange", "banana", "apple"));
-        Map<String, Integer> map = new HashMap<>();
 
         System.out.println("Exercise 11:");
         System.out.println("List: " + Arrays.toString(list.toArray()));
